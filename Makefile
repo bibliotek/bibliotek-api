@@ -12,3 +12,6 @@ coveralls:
 
 standard:
 	bash bin/standard.sh;
+
+setup:
+	bash bin/setup.sh;
