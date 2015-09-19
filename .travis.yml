@@ -1,7 +1,14 @@
+services:
+  - mongodb
+
 language: node_js
 node_js:
   - "0.12"
   - "4.1"
+
+before_script:
+  - sleep 15
+  - make configure
 
 install:
   - npm install istanbul
