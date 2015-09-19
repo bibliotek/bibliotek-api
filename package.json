@@ -1,0 +1,43 @@
+{
+  "name": "bibliotek-api",
+  "version": "0.1.0",
+  "description": "API to organize PDF libraries.",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bibliotek/bibliotek-api.git"
+  },
+  "keywords": [
+    "pdf",
+    "libraries",
+    "share"
+  ],
+  "author": "Luis Capelo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bibliotek/bibliotek-api/issues"
+  },
+  "homepage": "https://github.com/bibliotek/bibliotek-api#readme",
+  "dependencies": {
+    "body-parser": "^1.14.0",
+    "chai": "^3.2.0",
+    "chai-http": "^1.0.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "mocha": "^2.3.2",
+    "moment": "^2.10.6",
+    "mongoose": "^4.1.7",
+    "morgan": "^1.6.1",
+    "multer": "^1.0.3",
+    "rethinkdb": "^2.1.1",
+    "should": "^7.1.0",
+    "supertest": "^1.1.0"
+  }
+}
