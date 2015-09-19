@@ -16,6 +16,7 @@ $ curl -X POST localhost:3000/ \
 
 
 ## Docker Setup
+[![](https://badge.imagelayers.io/luiscape/bibliotek-api:v.0.1.0.svg)](https://imagelayers.io/?images=luiscape/bibliotek-api:v.0.1.0 'Get your own badge on imagelayers.io')
 
 Review the `Dockerfile` and run it linking to a MongoDB instance. `make setup` will try to setup its own collection in the instance (called `bibliotek`). This image needs the `upload` volume mounted and also the following environment variables in order to work appropriately:
 
