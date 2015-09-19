@@ -6,7 +6,7 @@ Service designed to store PDF files and preferences for my personal library.
 ## Usage
 The API has the following working methods:
 
-* `/` **GET**: Retrieves a running list of node status.
+* `/` **GET**: Retrieves a list of PDFs.
 
 Example request:
 ```shell
@@ -19,8 +19,9 @@ $ curl -X POST localhost:3000/ \
 
 Review the `Dockerfile` and run it linking to a MongoDB instance. `make setup` will try to setup its own collection in the instance (called `bibliotek`). This image needs the `upload` volume mounted and also the following environment variables in order to work appropriately:
 
-* `MONOGDB_SCRAPER_STATUS_USER_NAME`: Dedicated user name for manipulating collections.
-* `MONGODB_SCRAPER_STATUS_USER_PASSWORD`: Password for the user above.
+* `MONGODB_DATABASE`: Dedicated database for the application.
+* `MONGODB_USER_NAME`: Dedicated user name for manipulating collections.
+* `MONGODB_USER_PASSWORD`: Password for the user above.
 
 Those should be passed when running the image.
 
