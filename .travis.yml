@@ -8,7 +8,6 @@ node_js:
 
 before_script:
   - sleep 15
-  - make configure
 
 install:
   - npm install istanbul
